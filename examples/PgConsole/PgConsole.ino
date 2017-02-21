@@ -49,8 +49,10 @@
 
 IPAddress PGIP(192,168,1,5);        // your PostgreSQL server IP
 
+#ifdef USE_ARDUINO_WIFI
 const char ssid[] = "network_ssid";      //  your network SSID (name)
 const char pass[] = "network_pass";      // your network password
+#endif
 
 const char user[] = "db_username";       // your database user
 const char password[] = "db_password";   // your database password
